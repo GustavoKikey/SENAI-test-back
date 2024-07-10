@@ -1,0 +1,9 @@
+CREATE TABLE user (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    cpf VARCHAR(11) UNIQUE NOT NULL,
+    full_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    specialization VARCHAR(20) NOT NULL,
+    institution VARCHAR(20) NOT NULL
+);
